@@ -13,6 +13,9 @@
 		<!-- Иконка, которая будет на вкладке в браузере -->
 		<link rel="icon" href="img/favicon.ico">
 
+		<!-- анимация с гитхаба анимейт.сиэсэс -->
+		<link rel="stylesheet" href="css/animate.css">
+
 		<!-- шрифты Google -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 
@@ -29,18 +32,18 @@
  <header>
  	<div class="container">
  		<div class="row">
- 		  			<div class="col-lg-7"><img class="header-img" src="img/Logo 1.png" alt="macintosh_monitor">
+ 		  			<div class="col-lg-7"><img class="header-img wow zoomInDown" src="img/Logo 1.png" alt="macintosh_monitor">
  		  			</div> 
  		  			<!-- закрывает левую часть 7 колонок -->
  		  			<div class="col-xl-5">
- 				<p class="header-pretitle">Веб-разработчик</p>
- 				<h1 class="header-title">Роман Новиков</h1>
- 						<p class="header-subtitle">Вёрстка на HTML/CSS<br>
+ 				<p class="header-pretitle wow fadeInRightBig" data-wow-delay="0.1s">Веб-разработчик</p>
+ 				<h1 class="header-title wow fadeInRightBig" data-wow-delay="0.2s">Роман Новиков</h1>
+ 						<p class="header-subtitle wow fadeInRightBig" data-wow-delay="0.3s">Вёрстка на HTML/CSS<br>
  						Разработка сайтов под ключ
  						</p>
- 						<div class="header-buttom-block">
+ 						<div class="header-buttom-block wow fadeInRightBig" data-wow-delay="0.4s">
  							<a href="https://vk.com/sainy" class="header-button">Связатсья</a href="https://vk.com/sainy">
- 						<small>*Это бесплатно</small>
+ 						<small class="header-buttom-block wow fadeInRightBig" data-wow-delay="0.5s">*Это бесплатно</small>
  						</div>
  		  			</div>
  		  			<!-- закрывает правую часть 5 колонок-->
@@ -56,7 +59,7 @@
  			<p class="portfolio-subtitle">Мои работы</p>
  			<div class="row">
  				<div class="col-md-6">
-					<div class="portfolio-col-1">
+					<div class="portfolio-col-1 wow fadeInLeft">
 						<img src="img/Logo2.png" alt="Газпром">
 						<h3>внутренний университет «Газпром нефти»</h3>
 						<p class="portfolio-text">У «Газпром нефти» есть внутренний Корпоративный университет для сотрудников. Это настоящий университет, где сотрудники проходят 	обучение у 	внутренних тренеров компании или у специально приглашенных лекторов и экспертов....</p>
@@ -64,7 +67,7 @@
 					</div>
  				</div>
  				<div class="col-md-6">
- 					<div class="portfolio-col-2">
+ 					<div class="portfolio-col-2 wow fadeInRight">
  						<img src="img/Logo3.png" alt="Мир">
 						<h3>Сайт платежной системы «Мир»</h3>
 						<p class="portfolio-text">Обновленная версия сайта знакомит посетителей с компаниями, уже принимающими карты к оплате, и приглашает всех остальных присоединиться к 	проекту...</p>
@@ -102,6 +105,9 @@
  	</div>
  </footer>
  
-
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
 </body>
 </html>
